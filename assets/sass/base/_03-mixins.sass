@@ -1,0 +1,13 @@
+=optional-at-root($sel)
+    @at-root #{if(not &, $sel, selector-append(&, $sel))}
+        @content
+
+=placeholder-mixin
+    +optional-at-root('::-webkit-input-placeholder')
+        @content
+    +optional-at-root(':-moz-placeholder')
+        @content
+    +optional-at-root('::-moz-placeholder')
+        @content
+    +optional-at-root(':-ms-input-placeholder')
+        @content

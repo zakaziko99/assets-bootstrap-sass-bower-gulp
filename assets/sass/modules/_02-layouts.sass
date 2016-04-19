@@ -1,0 +1,10 @@
+// LAYOUTS
+// -------
+
+.container-columns
+    @include container-fixed()
+    max-width: 940px
+    @media (max-width: $screen-large)
+        width: 100%
+    .row-columns
+        @include make-row()
