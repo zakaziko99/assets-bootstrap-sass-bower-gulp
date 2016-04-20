@@ -1,0 +1,21 @@
+{
+  "name": "MagicBoxSite",
+  "authors": [
+    "Zakaria Amarifi <z.amarifi@dm73.net>"
+  ],
+  "description": "Get third partys components for developement",
+  "main": "bower.json",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
