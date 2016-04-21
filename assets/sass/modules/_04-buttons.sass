@@ -1,0 +1,33 @@
+// BUTTONS
+// -------
+
+.btn
+    display: inline-block
+    height: 30px
+    margin: 0 10px
+    padding: 0 20px
+    background: $white-color
+    border-radius: 6px
+    border: 2px solid $border-color
+    color: $first-color
+    font:
+        size: 1em
+        weight: bold
+    line-height: 28px
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    cursor: pointer
+    &:hover
+        background: $first-color
+        border-color: $first-color
+        color: darken($white-color, 7%)
+        text-decoration: none
+    &:focus
+        color: $first-color
+        text-decoration: none
+    &:focus:hover
+        color: darken($white-color, 7%)
+        text-decoration: none
+    &.active
+        box-shadow: none
