@@ -1,0 +1,28 @@
+{
+  "name": "assets-bootstrap-sass-bower-gulp",
+  "version": "1.0.0",
+  "description": "My SASS assets for a new project using Bootstrap, Bower & Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakaziko99/assets-bootstrap-sass-bower-gulp.git"
+  },
+  "author": "Zakaria Amarifi <amarifi.zakaria@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakaziko99/assets-bootstrap-sass-bower-gulp/issues"
+  },
+  "homepage": "https://github.com/zakaziko99/assets-bootstrap-sass-bower-gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
