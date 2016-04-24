@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zakaziko99/assets-bootstrap-sass-bower-gulp#readme",
   "devDependencies": {
+    "browser-sync": "^2.12.3",
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^1.2.2"
   }
