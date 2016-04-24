@@ -4,13 +4,20 @@ var browserSync = require('browser-sync');
 var serverPath  = 'web-demo';
 var configPaths = {
         sass: {
-            src: 'assets/sass',
+            src:  'assets/sass',
             dest: serverPath + '/css'
         }
     };
 
+gulp.task('sass', function() {
+    gulp.src(configPaths.sass.src + '/main.scss')
+        .pipe($.sass())
+        .pipe(gulp.dest(configPaths.sass.dest))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 // Watch Files For Changes & Reload
-gulp.task('serve', [], function() {
+gulp.task('serve', ['sass'], function() {
     browserSync({
         port: 5000,
         notify: false,
@@ -34,4 +41,8 @@ gulp.task('serve', [], function() {
     });
 
     gulp.watch(serverPath + '/index.html', browserSync.reload);
+    gulp.watch(configPaths.sass.src + '/**/{*.sass, *.scss}', ['sass']);
 });
+
+// Default Task
+gulp.task('default', ['serve']);

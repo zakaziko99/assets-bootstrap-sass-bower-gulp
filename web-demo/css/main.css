@@ -1,1 +1,63 @@
-/* This will be a generated CSS form my SASS assets */
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 16px; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-white {
+  color: #FFF; }
+
+.btn {
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  padding: 0 20px;
+  background: #FFF;
+  border-radius: 6px;
+  border: 2px solid #CCCCCC;
+  color: #336699;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .btn:hover {
+    background: #336699;
+    border-color: #336699;
+    color: #ededed;
+    text-decoration: none; }
+  .btn:focus {
+    color: #336699;
+    text-decoration: none; }
+  .btn:focus:hover {
+    color: #ededed;
+    text-decoration: none; }
+  .btn.active {
+    box-shadow: none; }
+
+header.header {
+  background: #FFF; }
+
+footer.footer .copyright-footer {
+  text-align: center; }
