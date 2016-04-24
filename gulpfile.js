@@ -11,7 +11,16 @@ var configPaths = {
 
 gulp.task('sass', function() {
     gulp.src(configPaths.sass.src + '/main.scss')
-        .pipe($.sass())
+        .pipe($.sass().on('error', $.sass.logError))
+        .pipe($.autoprefixer(
+            [
+                'last 15 versions',
+                '> 1%',
+                'ie 8',
+                'ie 7'
+            ],
+            {cascade: true}
+        ))
         .pipe(gulp.dest(configPaths.sass.dest))
         .pipe(browserSync.reload({stream: true}));
 });
