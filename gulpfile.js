@@ -11,6 +11,7 @@ var configPaths = {
 
 gulp.task('sass', function() {
     gulp.src(configPaths.sass.src + '/main.scss')
+        .pipe($.sourcemaps.init())
         .pipe($.sass().on('error', $.sass.logError))
         .pipe($.autoprefixer(
             [
@@ -21,6 +22,7 @@ gulp.task('sass', function() {
             ],
             {cascade: true}
         ))
+        .pipe($.sourcemaps.write('./maps'))
         .pipe(gulp.dest(configPaths.sass.dest))
         .pipe(browserSync.reload({stream: true}));
 });
