@@ -22,9 +22,10 @@ gulp.task('sass', function() {
             ],
             {cascade: true}
         ))
-        .pipe($.sourcemaps.write('./maps'))
         .pipe(gulp.dest(configPaths.sass.dest))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({stream: true}))
+        .pipe($.size({title: 'Compiling SASS'}))
+        .pipe($.sourcemaps.write('./maps'));
 });
 
 // Watch Files For Changes & Reload
