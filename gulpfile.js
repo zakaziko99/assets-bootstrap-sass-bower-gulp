@@ -30,7 +30,7 @@ gulp.task('sass', function() {
         ))
         .pipe($.minifyCss())
         .pipe(gulp.dest(configPaths.sass.dest))
-        .pipe(browserSync.reload({stream: true}))
+        .pipe(browserSync.stream())
         .pipe($.size({title: 'Compiling SASS'}))
         .pipe($.sourcemaps.write('./maps'));
 });
