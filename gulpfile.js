@@ -22,6 +22,7 @@ gulp.task('sass', function() {
             ],
             {cascade: true}
         ))
+        .pipe($.minifyCss())
         .pipe(gulp.dest(configPaths.sass.dest))
         .pipe(browserSync.reload({stream: true}))
         .pipe($.size({title: 'Compiling SASS'}))
