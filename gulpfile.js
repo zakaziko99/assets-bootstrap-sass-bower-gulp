@@ -6,13 +6,19 @@ var configPaths = {
         sass: {
             src:  'assets/sass',
             dest: serverPath + '/css'
-        }
+        },
+        bower: 'bower_components'
     };
 
 gulp.task('sass', function() {
     gulp.src(configPaths.sass.src + '/main.scss')
         .pipe($.sourcemaps.init())
-        .pipe($.sass().on('error', $.sass.logError))
+        .pipe($.sass({
+            includePaths : [
+                configPaths.sass.src,
+                 configPaths.bower + '/bootstrap-sass/assets/stylesheets'
+            ]
+        }).on('error', $.sass.logError))
         .pipe($.autoprefixer(
             [
                 'last 15 versions',
