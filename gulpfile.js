@@ -7,6 +7,10 @@ var configPaths = {
             src:  'assets/sass',
             dest: serverPath + '/css'
         },
+        js: {
+            src:  'assets/scripts/dev',
+            dest: serverPath + '/js'
+        },
         bower: 'bower_components'
     };
 
@@ -35,8 +39,14 @@ gulp.task('sass', function() {
         .pipe($.sourcemaps.write('./maps'));
 });
 
+gulp.task('jquery', function() {
+    gulp.src(configPaths.bower + '/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest(configPaths.js.dest + '/libs'))
+        .pipe($.size({title: 'Copying jQuery'}));
+});
+
 // Watch Files For Changes & Reload
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'jquery'], function() {
     browserSync({
         port: 5000,
         notify: false,
