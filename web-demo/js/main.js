@@ -1,0 +1,1 @@
+!function(n){n(window)}(function(n){n.console.log("start script")});

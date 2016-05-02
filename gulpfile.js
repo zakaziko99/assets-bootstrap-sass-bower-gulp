@@ -8,7 +8,7 @@ var configPaths = {
             dest: serverPath + '/css'
         },
         js: {
-            src:  'assets/scripts/dev',
+            src:  'assets/scripts',
             dest: serverPath + '/js'
         },
         bower: 'bower_components'
@@ -45,8 +45,17 @@ gulp.task('jquery', function() {
         .pipe($.size({title: 'Copying jQuery'}));
 });
 
+gulp.task('js', function() {
+    gulp.src(configPaths.js.src + '/dev/*.js')
+        .pipe($.concat('main.js'))
+        .pipe(gulp.dest(configPaths.js.src))
+        .pipe($.uglify({preserveComments: 'some'}))
+        .pipe(gulp.dest(configPaths.js.dest))
+        .pipe($.size({title: 'Generating JavaScript'}));
+});
+
 // Watch Files For Changes & Reload
-gulp.task('serve', ['sass', 'jquery'], function() {
+gulp.task('serve', ['sass', 'jquery', 'js'], function() {
     browserSync({
         port: 5000,
         notify: false,
@@ -71,6 +80,7 @@ gulp.task('serve', ['sass', 'jquery'], function() {
 
     gulp.watch(serverPath + '/index.html', browserSync.reload);
     gulp.watch(configPaths.sass.src + '/**/{*.sass, *.scss}', ['sass']);
+    gulp.watch(configPaths.js.src + '/dev/*.js', ['js'], browserSync.reload);
 });
 
 // Default Task
