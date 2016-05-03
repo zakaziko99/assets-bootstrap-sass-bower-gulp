@@ -80,7 +80,7 @@ gulp.task('serve', ['sass', 'jquery', 'js'], function() {
 
     gulp.watch(serverPath + '/index.html', browserSync.reload);
     gulp.watch(configPaths.sass.src + '/**/{*.sass, *.scss}', ['sass']);
-    gulp.watch(configPaths.js.src + '/dev/*.js', ['js'], browserSync.reload);
+    gulp.watch(configPaths.js.src + '/dev/*.js', ['js', browserSync.reload]);
 });
 
 // Default Task
