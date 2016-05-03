@@ -8,8 +8,12 @@ var configPaths = {
             dest: serverPath + '/css'
         },
         js: {
-            src:  'assets/scripts',
-            dest: serverPath + '/js'
+            src:       'assets/scripts',
+            dest:      serverPath + '/js',
+            bootstrap: {
+                key:     '__bootstrap__',
+                replace: '../../bower_components/bootstrap-sass/assets/javascripts/bootstrap'
+            }
         },
         bower: 'bower_components'
     };
@@ -45,6 +49,18 @@ gulp.task('jquery', function() {
         .pipe($.size({title: 'Copying jQuery'}));
 });
 
+gulp.task('bootstrap_js', function() {
+    var bootstrapPath = configPaths.js.bootstrap;
+
+    gulp.src(configPaths.js.src + '/bootstrap.js')
+        .pipe($.replace(bootstrapPath.key, bootstrapPath.replace))
+        .pipe($.resolveDependencies({pattern: /\/\/ @require [\s-]*(.*?\.js)/g}))
+        .pipe($.concat('bootstrap.min.js'))
+        .pipe($.uglify({preserveComments: 'some'}))
+        .pipe(gulp.dest(configPaths.js.dest + '/libs'))
+        .pipe($.size({title: 'Generating Custom Bootstrap'}));
+});
+
 gulp.task('js', function() {
     gulp.src(configPaths.js.src + '/dev/*.js')
         .pipe($.concat('main.js'))
@@ -55,7 +71,7 @@ gulp.task('js', function() {
 });
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['sass', 'jquery', 'js'], function() {
+gulp.task('serve', ['sass', 'jquery', 'bootstrap_js', 'js'], function() {
     browserSync({
         port: 5000,
         notify: false,
