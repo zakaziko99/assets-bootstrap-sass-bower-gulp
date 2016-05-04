@@ -1,0 +1,12 @@
+// @require __bootstrap__/affix.js
+// @require __bootstrap__/alert.js
+// @require __bootstrap__/button.js
+// @require __bootstrap__/carousel.js
+// @require __bootstrap__/collapse.js
+// @require __bootstrap__/dropdown.js
+// @require __bootstrap__/modal.js
+// @require __bootstrap__/scrollspy.js
+// @require __bootstrap__/tab.js
+// @require __bootstrap__/transition.js
+// @require __bootstrap__/tooltip.js
+// @require __bootstrap__/popover.js
