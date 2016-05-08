@@ -96,4 +96,14 @@ Run the sass gulp task
 gulp sass
 ```
 
-This will compile the SASS through the file 'assets/sass/main.scss' and outputs the compiling minified css file 'main.css' on the '<dist-folder>/css/' folder
+This will compile the SASS through the file 'assets/sass/main.scss' and outputs the compiling minified css file 'main.css' on the '&lt;dist-folder&gt;/css' folder
+
+#### jquery
+
+Run the jquery gulp task
+
+```sh
+gulp jquery
+```
+
+This will copy the minified jquery library fron '/bower_components' folder to '&lt;dist-folder&gt;/js/libs' folder
