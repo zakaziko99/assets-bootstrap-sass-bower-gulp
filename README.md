@@ -18,13 +18,21 @@ This boilerplate uses a number of open source projects to work properly:
 
 #### First, get the git repository
 
-In order to start a project with `Bootstrap SASS` & `jQuery`, first you'll better git the repo
+In order to start a project with `Bootstrap SASS` & `jQuery`, first you'll better get the repo
 
 ```sh
 git clone git@github.com:zakaziko99/assets-bootstrap-sass-bower-gulp.git
-cd assets-bootstrap-sass-bower-gulp/
 ```
 
+#### Customizing your project
+
+Then customize your project by changing the name and deleting the git folder
+
+```sh
+mv assets-bootstrap-sass-bower-gulp <project-folder>
+cd <project-folder>/
+rm -rf .git
+```
 <!-- #### Quick-start (for experienced users)
 
 With `Node.js` installed & `composer.phar` on the local root, run the following one liner from the root of your '**MB**' application:
