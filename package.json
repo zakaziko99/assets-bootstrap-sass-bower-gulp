@@ -1,14 +1,14 @@
 {
-  "name": "assets-bootstrap-sass-bower-gulp",
+  "name": "yourCustomProject",
   "version": "1.0.0",
-  "description": "My SASS assets for a new project using Bootstrap, Bower & Gulp",
+  "description": "Description for you custom project using Gulp tasks",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zakaziko99/assets-bootstrap-sass-bower-gulp.git"
+    "url": "git@github.com:zakaziko99/assets-bootstrap-sass-bower-gulp.git"
   },
   "author": "Zakaria Amarifi <amarifi.zakaria@gmail.com>",
   "license": "ISC",

@@ -1,9 +1,9 @@
 {
-  "name": "MagicBoxSite",
+  "name": "YourCustomProject",
   "authors": [
-    "Zakaria Amarifi <z.amarifi@dm73.net>"
+    "Zakaria Amarifi <amarifi.zakaria@gmail.com>"
   ],
-  "description": "Get third partys components for developement",
+  "description": "Get Bootstrap SASS with jQuery dependencies",
   "main": "bower.json",
   "moduleType": [],
   "license": "MIT",

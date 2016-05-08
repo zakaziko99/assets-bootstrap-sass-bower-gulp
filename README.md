@@ -2,15 +2,15 @@
 
 > My SASS assets for a new project using Bootstrap, Bower & Gulp
 
-<!-- ### Techs used
-'**MagicBox**' uses a number of open source projects to work properly:
+### Techs used
+This boilerplate uses a number of open source projects to work properly:
 
   * NodeJs
   * Bower
   * Gulp
+  * Bootstrap
+  * jQuery
   * SASS
-  * PHP
-  * Composer
 
 ## Getting Started
 
@@ -18,14 +18,16 @@
 
 #### First, get the git repository
 
+In order to start a project with `Bootstrap SASS` & `jQuery`, first you'll better git the repo
+
 ```sh
-git clone git@gitlab.dm73.net:dm73/sfmagicbox.git
-cd sfmagicbox/
+git clone git@github.com:zakaziko99/assets-bootstrap-sass-bower-gulp.git
+cd assets-bootstrap-sass-bower-gulp/
 ```
 
-#### Quick-start (for experienced users)
+<!-- #### Quick-start (for experienced users)
 
-With `Node.js` installed & `composer.phar` on the local root, run the following one liner from the root of your '**MagicBox**' application:
+With `Node.js` installed & `composer.phar` on the local root, run the following one liner from the root of your '**MB**' application:
 
 ```sh
 php composer.phar install
@@ -35,7 +37,7 @@ bower install && npm install
 
 #### Prerequisites (for everyone)
 
-The '**MagicBox**' Symfony2 application requires the following major dependencies:
+The '**MB**' Symfony2 application requires the following major dependencies:
 
 - Composer, a Dependency Manager for PHP modules.
 - Node.js, used to run JavaScript tools from the command line.
@@ -62,11 +64,11 @@ The version should be at or above 0.12.x.
 npm install -g bower gulp jshint jscs
 ```
 
-This lets you run `bower` and `gulp` from the command line. (the working directory must be the root of your '**MagicBox**' application)
+This lets you run `bower` and `gulp` from the command line. (the working directory must be the root of your '**MB**' application)
 
 The `jshint` and `jscs` modules to help to write better & clean JavaScript code (better install them globally)
 
-5)  Install the '**MagicBox**' application's local `npm` and `bower` dependencies.
+5)  Install the '**MB**' application's local `npm` and `bower` dependencies.
 
 ```sh
 bower install && npm install
