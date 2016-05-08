@@ -88,4 +88,12 @@ In case of SASS changes on '/assets/sass/' folder, the page will update the css 
 
 The `serve` gulp task is also the default task.
 
-<!-- #### Build & Vulcanize for distribution -->
+#### sass
+
+Run the sass gulp task
+
+```sh
+gulp sass
+```
+
+This will compile the SASS through the file 'assets/sass/main.scss' and outputs the compiling minified css file 'main.css' on the '<dist-folder>/css/' folder
