@@ -26,30 +26,20 @@ git clone git@github.com:zakaziko99/assets-bootstrap-sass-bower-gulp.git
 
 #### Customizing your project
 
-Then customize your project by changing the name and deleting the git folder
+Then customize your project by changing the name and delete the .git folder
 
 ```sh
 mv assets-bootstrap-sass-bower-gulp <project-folder>
 cd <project-folder>/
 rm -rf .git
 ```
-<!-- #### Quick-start (for experienced users)
+#### Prerequisites
 
-With `Node.js` installed & `composer.phar` on the local root, run the following one liner from the root of your '**MB**' application:
+To use Bootstrap SASS & jQuery, your project requires the following major dependencies:
 
-```sh
-php composer.phar install
-npm install -g bower gulp jshint jscs
-bower install && npm install
-```
-
-#### Prerequisites (for everyone)
-
-The '**MB**' Symfony2 application requires the following major dependencies:
-
-- Composer, a Dependency Manager for PHP modules.
 - Node.js, used to run JavaScript tools from the command line.
 - npm, the node package manager, installed with Node.js and used to install Node.js packages.
+- bower, a fast package manager for the web frameworks, libraries, assets, and utilities.
 - gulp, a Node.js-based build tool.
 
 **To install dependencies:**
@@ -62,21 +52,17 @@ node --version
 
 The version should be at or above 0.12.x.
 
-2)  If you don't have `composer.phar` file on your local root, please follow instructions on this page [Download Composer](https://getcomposer.org/download)
+2)  If you don't have `Node.js` installed, or you have a lower version, go to [nodejs.org](https://nodejs.org) and click on the big green Install button.
 
-3)  If you don't have `Node.js` installed, or you have a lower version, go to [nodejs.org](https://nodejs.org) and click on the big green Install button.
-
-4)  Install `bower`, `gulp`, `jshint` and `jscs` globally.
+3)  Install `bower` and `gulp`.
 
 ```sh
-npm install -g bower gulp jshint jscs
+npm install -g bower gulp
 ```
 
-This lets you run `bower` and `gulp` from the command line. (the working directory must be the root of your '**MB**' application)
+This lets you run `bower` and `gulp` from the command line. (the working directory must be the root of your project)
 
-The `jshint` and `jscs` modules to help to write better & clean JavaScript code (better install them globally)
-
-5)  Install the '**MB**' application's local `npm` and `bower` dependencies.
+4) Install the `Bootstrap SASS` & `jQuery` dependencies.
 
 ```sh
 bower install && npm install
@@ -84,7 +70,7 @@ bower install && npm install
 
 This installs Automate Tasks for better workflow.
 
-### Development workflow
+<!-- ### Development workflow
 
 #### Serve / watch (for Development)
 
