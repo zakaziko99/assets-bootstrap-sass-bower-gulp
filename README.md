@@ -35,7 +35,7 @@ rm -rf .git
 ```
 #### Prerequisites
 
-To use Bootstrap SASS & jQuery, your project requires the following major dependencies:
+To use `Bootstrap SASS` & `jQuery`, your project requires the following major dependencies:
 
 - Node.js, used to run JavaScript tools from the command line.
 - npm, the node package manager, installed with Node.js and used to install Node.js packages.
@@ -70,29 +70,22 @@ bower install && npm install
 
 This installs Automate Tasks for better workflow.
 
-<!-- ### Development workflow
+### Development workflow
 
 #### Serve / watch (for Development)
 
 Run the dev gulp task
 
 ```sh
-gulp serve:frontsite
+gulp serve
 ```
 
 This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
 
-#### Build & Vulcanize for distribution
+This will be also reload the page in real time in case of changes on HTML pages or Js scripts located on '/assets/scripts/dev' folder.
 
-```sh
-gulp dist
-```
+In case of SASS changes on '/assets/sass/' folder, the page will update the css in real time without reloading.
 
-Build and optimize the current project, ready for deployment. This includes linting as well as vulcanization, image, script, stylesheet and HTML optimization and minification.
+The `serve` gulp task is also the default task.
 
-#### Serve for testing the distribution files
-
-```sh
-gulp serve:dist
-```
- -->
+<!-- #### Build & Vulcanize for distribution -->
