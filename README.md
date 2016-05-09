@@ -107,3 +107,13 @@ gulp jquery
 ```
 
 This will copy the minified jquery library fron '/bower_components' folder to '&lt;dist-folder&gt;/js/libs' folder
+
+#### Bootstrap scripts
+
+Run the generating Bootstrap js gulp task
+
+```sh
+gulp bootstrap_js
+```
+
+This will generate a customized bootstrap js script through the file 'assets/scripts/bootstrap.js' and outputs the generated and minified js file 'bootstrap.js' ont the '&lt;dist-folder&gt;/js/libs' folder
