@@ -72,22 +72,6 @@ This installs Automate Tasks for better workflow.
 
 ### Development workflow
 
-#### Serve / watch (for Development)
-
-Run the dev gulp task
-
-```sh
-gulp serve
-```
-
-This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
-
-This will be also reload the page in real time in case of changes on HTML pages or Js scripts located on '/assets/scripts/dev' folder.
-
-In case of SASS changes on '/assets/sass/' folder, the page will update the css in real time without reloading.
-
-The `serve` gulp task is also the default task.
-
 #### sass
 
 Run the sass gulp task
@@ -116,4 +100,32 @@ Run the generating Bootstrap js gulp task
 gulp bootstrap_js
 ```
 
-This will generate a customized bootstrap js script through the file 'assets/scripts/bootstrap.js' and outputs the generated and minified js file 'bootstrap.js' ont the '&lt;dist-folder&gt;/js/libs' folder
+This will generate a customized bootstrap js script through the file 'assets/scripts/bootstrap.js' and outputs the generated and minified js file 'bootstrap.js' on the '&lt;dist-folder&gt;/js/libs' folder
+
+#### JS scripts
+
+Run the generating js gulp task
+
+```sh
+gulp js
+```
+
+This will concatenate the files under the folder 'assets/scripts/dev/' and outputs the generated and minified js file 'main.js' on the '&lt;dist-folder&gt;/js' folder
+
+#### Serve / watch (for Development)
+
+Run the dev gulp task
+
+```sh
+gulp serve
+```
+
+This will run first the `sass`, `jquery`, `bootstrap_js` and `js` gulp tasks.
+
+This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
+
+This will be also reload the page in real time in case of changes on HTML pages or Js scripts located on '/assets/scripts/dev' folder.
+
+In case of SASS changes on '/assets/sass/' folder, the page will update the css in real time without reloading.
+
+The `serve` gulp task is also the default task.
