@@ -80,7 +80,9 @@ Run the sass gulp task
 gulp sass
 ```
 
-This will compile the SASS through the file 'assets/sass/main.scss' and outputs the compiling minified css file 'main.css' on the '&lt;dist-folder&gt;/css' folder
+This will compile the SASS through the file 'assets/sass/main.scss' and outputs the compiling minified css file 'main.css' on the '&lt;dist-folder&gt;/css' folder including `Bootstrap SASS` files downlaoder with `bower`
+
+You can customize the `Bootstrap SASS` included by editing the 'assets/sass/includes/_bootstrap-config.scss' such Alerts, Modals, Carousels, ...
 
 #### jquery
 
@@ -101,6 +103,8 @@ gulp bootstrap_js
 ```
 
 This will generate a customized bootstrap js script through the file 'assets/scripts/bootstrap.js' and outputs the generated and minified js file 'bootstrap.js' on the '&lt;dist-folder&gt;/js/libs' folder
+
+You can customize the `Bootstrap JS` plugins to include in the generated js file, by editing the 'assets/scripts/bootstrap.js' file & delete the calls of plugins files.
 
 #### JS scripts
 
