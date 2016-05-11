@@ -70,6 +70,14 @@ bower install && npm install
 
 This installs Automate Tasks for better workflow.
 
+### Customizing gulpfile.js
+
+on the gulpfile.js, you can customize the dist folder of your project:
+
+```js
+var serverPath  = '<dist-folder>';
+```
+
 ### Development workflow
 
 #### sass
