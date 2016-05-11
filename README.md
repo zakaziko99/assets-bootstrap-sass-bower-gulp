@@ -14,7 +14,7 @@ This boilerplate uses a number of open source projects to work properly:
 
 ## Contents
 * [Install dependencies](#install-dependencies)
-* [Customizing gulpfile.js](#customizing-gulpfile.js)
+* [Customizing gulpfile.js](#customizing-gulpfile)
 * [Development workflow](#development-workflow)
 
 ### Install dependencies
@@ -73,9 +73,9 @@ bower install && npm install
 
 This installs Automate Tasks for better workflow.
 
-### Customizing gulpfile.js
+### Customizing gulpfile
 
-on the gulpfile.js, you can customize the dist folder of your project:
+on the 'gulpfile.js' file, you can customize the dist folder of your project:
 
 ```js
 var serverPath  = '<dist-folder>';
