@@ -12,7 +12,10 @@ This boilerplate uses a number of open source projects to work properly:
   * jQuery
   * SASS
 
-## Getting Started
+## Contents
+* [Install dependencies](#install-dependencies)
+* [Customizing gulpfile.js](#customizing-gulpfile-js)
+* [Development workflow](#development-workflow)
 
 ### Install dependencies
 
