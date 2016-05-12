@@ -1,4 +1,4 @@
-# Assets for Bootstrap SASS with Bower & Gulp
+# Assets for Bootstrap SASS with Bower & Gulp [![Build Status](https://travis-ci.org/zakaziko99/assets-bootstrap-sass-bower-gulp.svg?branch=master)](https://travis-ci.org/zakaziko99/assets-bootstrap-sass-bower-gulp)
 
 > My SASS assets for a new project using Bootstrap, Bower & Gulp
 
