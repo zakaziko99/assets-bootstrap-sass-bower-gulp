@@ -127,6 +127,16 @@ gulp js
 
 This will concatenate the files under the folder 'assets/scripts/dev/' and outputs the generated and minified js file 'main.js' on the '&lt;dist-folder&gt;/js' folder
 
+#### Build
+
+Run the build gulp task
+
+```sh
+gulp build
+```
+
+This will run the `sass`, `jquery`, `bootstrap_js` and `js` gulp tasks.
+
 #### Serve / watch (for Development)
 
 Run the dev gulp task
@@ -135,7 +145,7 @@ Run the dev gulp task
 gulp serve
 ```
 
-This will run first the `sass`, `jquery`, `bootstrap_js` and `js` gulp tasks.
+This will run first the `build` gulp task.
 
 This outputs an IP address you can use to locally test and another that can be used on devices connected to your network.
 
