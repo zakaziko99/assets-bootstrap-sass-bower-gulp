@@ -71,7 +71,7 @@ gulp.task('js', function() {
 });
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['sass', 'jquery', 'bootstrap_js', 'js'], function() {
+gulp.task('serve', ['build'], function() {
     browserSync({
         port: 5000,
         notify: false,
@@ -99,5 +99,8 @@ gulp.task('serve', ['sass', 'jquery', 'bootstrap_js', 'js'], function() {
     gulp.watch(configPaths.js.src + '/dev/*.js', ['js', browserSync.reload]);
 });
 
+// Build Task
+gulp.task('build', ['sass', 'jquery', 'bootstrap_js', 'js']);
+
 // Default Task
-gulp.task('default', ['serve']);
+gulp.task('default', ['build']);
