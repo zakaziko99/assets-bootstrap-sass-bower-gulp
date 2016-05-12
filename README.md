@@ -5,12 +5,12 @@
 ### Techs used
 This boilerplate uses a number of open source projects to work properly:
 
-  * NodeJs
-  * Bower
-  * Gulp
-  * Bootstrap
-  * jQuery
-  * SASS
+  * [NodeJs](https://nodejs.org/)
+  * [Bower](http://bower.io/)
+  * [Gulp](http://gulpjs.com/)
+  * [Bootstrap 3](http://getbootstrap.com/)
+  * [jQuery](https://jquery.com/)
+  * [SASS](http://sass-lang.com/)
 
 ## Contents
 * [Install dependencies](#install-dependencies)
