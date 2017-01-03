@@ -24,7 +24,7 @@ gulp.task('sass', function() {
         .pipe($.sass({
             includePaths : [
                 configPaths.sass.src,
-                 configPaths.bower + '/bootstrap-sass/assets/stylesheets'
+                configPaths.bower + '/bootstrap-sass/assets/stylesheets'
             ]
         }).on('error', $.sass.logError))
         .pipe($.autoprefixer(
